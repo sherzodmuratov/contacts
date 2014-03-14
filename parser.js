@@ -18,6 +18,4 @@ function parse(contactList) {
 
 	this.contacts = contacts;
 	return headerLine;
-// console.log(txt.split("\t")[0]);
-
 }
