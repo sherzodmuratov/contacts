@@ -6,9 +6,10 @@ Web application to create, view and edit personal and business contacts.
 
 ### Development environment
 #### DB
-Install 
-* MySQL Community Server - http://dev.mysql.com/downloads/installer/
-* MySQL Workbench - http://dev.mysql.com/downloads/tools/workbench/
+ 
+* Install MySQL Community Server - http://dev.mysql.com/downloads/installer/
+* Install MySQL Workbench - http://dev.mysql.com/downloads/tools/workbench/
+* Use dump*.sql file to restore database.
 
 #### Maven - automation tool
 Download http://maven.apache.org/download.cgi -- and follow instructions in README file
