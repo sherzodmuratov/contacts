@@ -213,5 +213,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-contacts.iml
-.idea/*
+code/contacts.iml
+code/.idea/*

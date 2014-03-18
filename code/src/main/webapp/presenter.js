@@ -40,4 +40,4 @@ function loadContacts(file) {
     rawFile.send(null);
 }
 
-loadContacts("data.txt"); // executes function
+loadContacts("/list"); // executes function
