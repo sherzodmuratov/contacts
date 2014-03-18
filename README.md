@@ -19,7 +19,8 @@ Use your favorite IDE like Eclipse, Intellij.
 Import as Maven project.
 
 #### Aplication server
-Use default Jetty plugin with Maven
+Use default Jetty plugin with Maven.
+Use "mvn jetty:run" command on /code folder to run jetty.
 
 ### Production environment
 We use AWS EC2 to deploy our app at http://54.186.150.153:8080
