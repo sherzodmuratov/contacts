@@ -215,3 +215,4 @@ pip-log.txt
 .mr.developer.cfg
 code/contacts.iml
 code/.idea/*
+code/target/*
