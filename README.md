@@ -1,7 +1,7 @@
 contacts
 ========
 
-Web application to create, view and edit personal and business contacts. <a href='https://github.com/sherzodmuratov/contacts/wiki)'>Wiki!</a>
+Web application to create, view and edit personal and business contacts. <a href='https://github.com/sherzodmuratov/contacts/wiki'>Wiki!</a>
 <hr>
 ## Learning stuff
 #### Product development process/standarts and best practices
