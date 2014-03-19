@@ -7,3 +7,5 @@ Web application to create, view and edit personal and business contacts. <a href
 #### Product development process/standarts and best practices
 * http://pointnorth.io/ - Design and development standards to align and guide your project
 
+#### Development
+* Data Access Object Pattern - http://www.oracle.com/technetwork/java/dataaccessobject-138824.html
