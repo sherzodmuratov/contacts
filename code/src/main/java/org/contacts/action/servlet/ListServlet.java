@@ -13,7 +13,7 @@ public class ListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
-        out.println("James\tButt\t504-621-8927\n");
-        out.println("Josephine\tDarakjy\t810-292-9388");
+        out.print("James\tButt\t504-621-8927\n");
+        out.print("Josephine\tDarakjy\t810-292-9388");
     }
 }
