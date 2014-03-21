@@ -5,14 +5,75 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <!-- Filters -->
+    <filter>
+        <filter-name>loggingFilter</filter-name>
+        <filter-class>org.contacts.action.filter.LoggingFilter</filter-class>
+    </filter>
+
+
+    <!-- Filter Mappings -->
+    <filter-mapping>
+        <filter-name>loggingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!-- Servlets -->
     <servlet>
         <servlet-name>listServlet</servlet-name>
         <servlet-class>org.contacts.action.servlet.ListServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>org.contacts.action.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>pageNotFoundServlet</servlet-name>
+        <servlet-class>org.contacts.action.servlet.PageNotFoundServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>oopsServlet</servlet-name>
+        <servlet-class>org.contacts.action.servlet.OopsServlet</servlet-class>
+    </servlet>
+
+
+    <!-- Servlets Mappings -->
     <servlet-mapping>
         <servlet-name>listServlet</servlet-name>
         <url-pattern>/list</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>pageNotFoundServlet</servlet-name>
+        <url-pattern>/pageNotFound</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>oopsServlet</servlet-name>
+        <url-pattern>/oops</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Error and exception handlers-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/pageNotFound</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/oops</location>
+    </error-page>
+
 </web-app>
