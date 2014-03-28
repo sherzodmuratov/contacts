@@ -22,10 +22,10 @@ public class UploadServlet extends HttpServlet {
             uploadDir.mkdir();
         }
 
-        String fileName = null;
+        String name = null;
         for(Part part : req.getParts()) {
-            fileName = extractFileName(part);
-            part.write(uploadPath + File.separator + fileName);
+            name = extractFileName(part);
+            part.write(uploadPath + File.separator + name);
         }
 
         resp.getWriter().write("Saved");
