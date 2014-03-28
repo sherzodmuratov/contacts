@@ -1,0 +1,23 @@
+.main-container {
+    background-color:#f3f3f3;
+    margin: 0 auto;
+    width:80%;
+    position:relative;
+}
+#contact-detail {
+    position:absolute;
+    top:0;
+    right:0;
+    width:68%;
+    height:100%;
+    border: 1px solid #434343;
+}
+.contact-list {
+    width : 30%;
+}
+.contact-brief {
+    border: 1px solid #434343;
+    padding: 20px;
+    margin-bottom:10px;
+    cursor:pointer;
+}

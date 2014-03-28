@@ -12,13 +12,14 @@
         <junit_verion>4.11</junit_verion>
         <javax_verion>3.0-alpha-1</javax_verion>
         <mysql_verion>5.1.17</mysql_verion>
+        <jstl_version>1.2</jstl_version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>${javax_verion}</version>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
 
@@ -35,6 +36,14 @@
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl_version}</version>
+        </dependency>
+
+
     </dependencies>
 
 
@@ -45,7 +54,7 @@
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <configuration>
-                    <scanIntervalSeconds>2</scanIntervalSeconds>
+
                     <httpConnector>
                         <port>8899</port>
                     </httpConnector>
